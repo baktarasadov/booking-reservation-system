@@ -1,1 +1,15 @@
-@import "./font";
+@import "./font-size", "./color";
+
+@font-face {
+  font-family: my;
+  src: url(../../fonts/poppins.ttf);
+}
+
+h2 {
+  font-size: $text-xs;
+}
+.test {
+  font-family: my;
+  font-size: $text-lg;
+  color: $color-emerald-reflection;
+}
