@@ -1,0 +1,31 @@
+.button {
+  width: fit-content;
+  font-family: $font-family-poppins;
+  font-size: $font-size-xs;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 9px 15px;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+    transition: 0.5s ease-in-out;
+    transform: scaleX(0.98);
+  }
+}
+
+.button-purple {
+  @extend .button;
+  background-color: $color-C64-purple;
+  color: $color-white;
+}
+
+.button-pearl {
+  @extend .button;
+  background-color: $color-pearl;
+  border: 1px solid $color-dissolved-denim;
+  color: $color-lost-at-sea;
+}
