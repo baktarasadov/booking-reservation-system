@@ -181,6 +181,37 @@ table {
   transform: scaleX(0.98);
 }
 
+.card-list .card-item {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 17px;
+       column-gap: 17px;
+  background: white;
+  padding: 15px 20px;
+  margin-top: 15px;
+}
+.card-list .card-item .card-item-left img {
+  width: 50px;
+  height: 50px;
+}
+.card-list .card-item .card-item-right h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #292d32;
+}
+.card-list .card-item .card-item-right p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #828f9a;
+}
+.card-list .card-item:hover {
+  border: 2px solid #53d56c;
+}
+
 body {
   height: 100vh;
 }

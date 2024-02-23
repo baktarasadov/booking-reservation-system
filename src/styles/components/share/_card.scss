@@ -1,0 +1,39 @@
+.card-list {
+  .card-item {
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+    background: $color-white;
+    padding: 15px 20px;
+    margin-top: 15px;
+    .card-item-left {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .card-item-right {
+      h3 {
+        @include fontStyle(
+          $font-family-poppins,
+          $font-size-sm,
+          21px,
+          $color-salute,
+          500
+        );
+      }
+      p {
+        @include fontStyle(
+          $font-family-poppins,
+          $font-size-xs,
+          19px,
+          $color-applause-please,
+          400
+        );
+      }
+    }
+    &:hover {
+      border: 2px solid $color-emerald-reflection;
+    }
+  }
+}
