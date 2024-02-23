@@ -1,0 +1,8 @@
+.button-purple {
+  @include button($color-C64-purple, $color-white);
+}
+
+.button-pearl {
+  @include button($color-pearl, $color-dissolved-denim);
+  border: 1px solid $color-dissolved-denim;
+}

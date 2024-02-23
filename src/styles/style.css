@@ -134,33 +134,111 @@ table {
   border-spacing: 0;
 }
 
-.button, .button-pearl, .button-purple {
-  width: -moz-fit-content;
-  width: fit-content;
+.button-purple {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-  font-weight: 600;
   line-height: 18px;
+  font-weight: white;
+  color: 600;
+  width: -moz-fit-content;
+  width: fit-content;
   letter-spacing: 0px;
   text-align: center;
   border-radius: 2px;
   text-transform: uppercase;
   padding: 9px 15px;
   border: 0;
+  background-color: #6c70dc;
   cursor: pointer;
 }
-.button:hover, .button-pearl:hover, .button-purple:hover {
+.button-purple:hover {
   transition: 0.5s ease-in-out;
   transform: scaleX(0.98);
 }
 
-.button-purple {
-  background-color: #6c70dc;
-  color: white;
+.button-pearl {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: #e3eaf3;
+  color: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0px;
+  text-align: center;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 9px 15px;
+  border: 0;
+  background-color: #f7f8fb;
+  cursor: pointer;
+  border: 1px solid #e3eaf3;
+}
+.button-pearl:hover {
+  transition: 0.5s ease-in-out;
+  transform: scaleX(0.98);
 }
 
-.button-pearl {
-  background-color: #f7f8fb;
-  border: 1px solid #e3eaf3;
-  color: #8f9ca7;
+body {
+  height: 100vh;
+}
+body main {
+  height: 100%;
+}
+body main .aside {
+  background-color: #292d32;
+  width: 230px;
+  height: 100%;
+}
+body main .aside ul {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+body main .aside ul li {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  cursor: pointer;
+}
+body main .aside ul li span {
+  background-color: #4d545a;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  color: white;
+}
+body main .aside ul li span:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.3s ease-in-out;
+}
+body main .aside ul li h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #626c76;
+}
+
+.active span {
+  background-color: #53d56c !important;
+}
+.active h3 {
+  color: #53d56c !important;
+}
+
+.done span {
+  background-color: #6c70dc !important;
+}
+.done h3 {
+  color: white !important;
 }/*# sourceMappingURL=style.css.map */
