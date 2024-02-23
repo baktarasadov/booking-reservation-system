@@ -95,6 +95,49 @@ body {
         .back {
           margin-left: 200px;
         }
+        @keyframes slideInFromBottom {
+          0% {
+            transform: translateY(100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+        .error {
+          width: Hug (156px);
+          height: Hug (42px);
+          border-radius: 2px;
+          background-color: $color-brasso;
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          padding: 10px 20px;
+          text-transform: uppercase;
+          animation: fadeIn 1s ease-in-out;
+          display: none;
+
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+
+          p {
+            @include fontStyle(
+              $font-family-poppins,
+              $font-size-xs,
+              18px,
+              $color-white,
+              500
+            );
+            animation: fadeIn 0.5s ease-in-out;
+          }
+        }
       }
     }
     //section end

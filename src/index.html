@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <script defer type="module" src="./js/index.js"></script>
   </head>
   <body>
     <main>
       <aside class="aside">
         <ul>
-          <li class="active">
+          <li class="active staff-tab">
             <span>1</span>
             <h3>Staff</h3>
           </li>
-          <li class="done">
+          <li class="service-tab">
             <span>2</span>
             <h3>Service</h3>
           </li>
@@ -32,41 +33,19 @@
         <div class="section-head">
           <h2 class="section-head-title">Select staff</h2>
         </div>
-        <div class="section-content">
-          <ul class="card-list">
-            <li class="card-item">
-              <div class="card-item-left">
-                <img src="../src/images/staff/alex.svg" />
-              </div>
-              <div class="card-item-right">
-                <h3>Alex Rosetta</h3>
-                <p>alexyrosetta@egmail.com</p>
-              </div>
-            </li>
-            <li class="card-item">
-              <div class="card-item-left">
-                <img src="../src/images/staff/alex.svg" />
-              </div>
-              <div class="card-item-right">
-                <h3>Alex Rosetta</h3>
-                <p>alexyrosetta@egmail.com</p>
-              </div>
-            </li>
-            <li class="card-item">
-              <div class="card-item-left">
-                <img src="../src/images/staff/alex.svg" />
-              </div>
-              <div class="card-item-right">
-                <h3>Alex Rosetta</h3>
-                <p>alexyrosetta@egmail.com</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <div class="section-content"></div>
         <div class="section-end">
           <div class="buttons">
-            <button class="button-pearl back">Back</button>
-            <button class="button-purple">Next</button>
+            <div>
+              <button class="button-pearl back">Back</button>
+            </div>
+            <div class="error">
+              <img src="./images/share/error.svg" alt="error" />
+              <p>Select staff</p>
+            </div>
+            <div>
+              <button class="button-purple next">Next</button>
+            </div>
           </div>
         </div>
       </section>

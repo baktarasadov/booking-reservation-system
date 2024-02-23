@@ -33,7 +33,12 @@
       }
     }
     &:hover {
-      border: 2px solid $color-emerald-reflection;
+      transform: translateY(-2px);
+      transition: 0.2s ease-in;
     }
   }
+}
+
+.select-Card {
+  border: 2px solid $color-emerald-reflection;
 }
