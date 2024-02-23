@@ -3,6 +3,6 @@
 }
 
 .button-pearl {
-  @include button($color-pearl, $color-dissolved-denim);
+  @include button($color-pearl, $color-lost-at-sea);
   border: 1px solid $color-dissolved-denim;
 }

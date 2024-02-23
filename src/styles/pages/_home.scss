@@ -3,7 +3,10 @@ body {
 
   main {
     height: 100%;
+    width: 100%;
+    display: flex;
 
+    // aside start
     .aside {
       background-color: $color-salute;
       width: 230px;
@@ -51,6 +54,50 @@ body {
         }
       }
     }
+    // aside end
+
+    //section start
+    .section {
+      background-color: $color-white-solid;
+      width: 100%;
+      height: 100%;
+      .section-head {
+        border-bottom: 1px solid $color-dissolved-denim;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        @include fontStyle(
+          $font-family-poppins,
+          $font-size-lg,
+          27px,
+          $color-salute,
+          500
+        );
+      }
+      .section-content {
+        padding: 30px;
+      }
+      .section-end {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.16);
+        height: 80px;
+        .buttons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 100%;
+          padding: 0 30px;
+        }
+        .back {
+          margin-left: 200px;
+        }
+      }
+    }
+    //section end
   }
 }
 
